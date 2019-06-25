@@ -1,0 +1,26 @@
+const Icons = {
+    chatBubble: require('../Assets/Icons/chat_bubble.png'),
+    coffeeCup: require('../Assets/Icons/coffee_cup.png'),
+    favorite: require('../Assets/Icons/love_nav.png'),
+    subscription: require('../Assets/Icons/subscription.png'),
+    settings: require('../Assets/Icons/settings.png'),
+    sharePink: require('../Assets/Icons/share_pink.png'),
+    subscribePink: require('../Assets/Icons/subscribe_pink.png'),
+    feedback: require('../Assets/Icons/feedback.png'),
+    complain: require('../Assets/Icons/complain.png'),
+    removeAccount: require('../Assets/Icons/remove_account.png'),
+    privacy: require('../Assets/Icons/privacy.png'),
+    serviceTerms: require('../Assets/Icons/t_c.png'),
+    dataProtection: require('../Assets/Icons/data_protection.png'),
+    safety: require('../Assets/Icons/safety.png'),
+    pickDate: require('../Assets/Icons/pick_date.png'),
+    addImageIcon: require('../Assets/Icons/add_bg.png'),
+    sendMessage: require('../Assets/Icons/send_button.png'),
+    undoGreen: require('../Assets/Icons/undo_green.png'),
+    sendPink: require('../Assets/Icons/send_pink.png'),
+    dislikePink: require('../Assets/Icons/dislike_pink.png'),
+    likeSpecial: require('../Assets/Icons/like_special.png'),
+    info: require('../Assets/Icons/info.png'),
+}
+
+export default Icons;

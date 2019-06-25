@@ -1,0 +1,13 @@
+@import "../../../Themes/colors";
+@import "../../../Themes/sizes";
+
+.carousel-custom-indicator {
+  background-color: transparent !important;
+  .MuiMobileStepper-dot {
+    transition: 0.4s linear;
+    margin: 0px $smaller-gap;
+    &.MuiMobileStepper-dotActive {
+      transform: scale(1.2);
+    }
+  }
+}

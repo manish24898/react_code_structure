@@ -1,0 +1,10 @@
+@import "../../../Themes/colors";
+@import "../../../Themes/sizes";
+
+.paper-input-wrapper {
+  width: 100%;
+  .paper-input-field {
+    padding: $smaller-gap $small-gap;
+    width: 100%;
+  }
+}

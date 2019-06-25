@@ -1,0 +1,28 @@
+@import "../../../Themes/colors";
+@import "../../../Themes/sizes";
+
+.custom-slider {
+  margin: 0px;
+  width: 100%;
+  height: $slider-height;
+  border-radius: $slider-height/2;
+  appearance: none;
+  background-color: $light-grey;
+  outline: none;
+  &::-webkit-slider-thumb {
+    cursor: pointer;
+    appearance: none;
+    width: $slider-thumb;
+    height: $slider-thumb;
+    border-radius: 50%;
+    background-color: $primary-pink;
+  }
+  &::-moz-range-thumb {
+    cursor: pointer;
+    appearance: none;
+    width: $slider-thumb;
+    height: $slider-thumb;
+    border-radius: 50%;
+    background-color: $primary-pink;
+  }
+}

@@ -1,0 +1,107 @@
+@import "../../../Themes/colors";
+@import "../../../Themes/sizes";
+
+.profile-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: $big-radius;
+  overflow: hidden;
+  &.animate {
+    transition: all 0.3s !important;
+  }
+  &.inactive {
+    box-shadow: none !important;
+  }
+  .image-slider {
+    width: 100%;
+    height: 100%;
+    .react-swipeable-view-container {
+      width: 100%;
+      height: 100%;
+      .user-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .user-info-wrapper {
+    position: absolute;
+    bottom: 0;
+    padding: $base-gap;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    .user-name {
+      font-size: $title-font;
+      text-transform: capitalize;
+      color: white;
+    }
+    .user-info {
+      color: white;
+    }
+  }
+  .card-overlay {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .like-icon,
+    .dislike-icon {
+      font-size: 2 * $big-icon;
+      color: $green;
+    }
+    .dislike-icon {
+      color: $primary-pink;
+    }
+    .overlay-info {
+      text-transform: uppercase;
+      color: white;
+      font-size: $big-font;
+    }
+  }
+  .card-fixed-header {
+    position: absolute;
+    padding: $base-gap;
+    top: 0px;
+    left: 0px;
+    .image-index-indicator {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      color: white;
+      height: $indicator-height;
+      outline: none;
+      border: none;
+      background-color: $indicator-bg;
+      border-radius: $indicator-height;
+      span {
+        font-weight: bold;
+        font-size: $smaller-font;
+      }
+      .index-text {
+        min-width: $smaller-font;
+        text-align: center;
+      }
+    }
+    .user-info-button {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: $indicator-height;
+      height: $indicator-height;
+      border-radius: $indicator-height;
+      background-color: $indicator-bg;
+      border: none;
+      outline: none;
+    }
+  }
+}

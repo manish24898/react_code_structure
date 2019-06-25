@@ -1,0 +1,35 @@
+@import "../../../Themes/colors";
+@import "../../../Themes/sizes";
+
+.custom-drawer {
+  .menu-lists {
+    width: $drawer-width;
+    .drawer-header {
+      padding: $big-gap;
+      background-color: $light-grey;
+      background: url("../../../Assets/Images/drawer_header_bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      .user-avatar {
+        width: $big-avatar;
+        height: $big-avatar;
+        background-color: black;
+        border: 2px solid white;
+      }
+      .user-name {
+        color: white;
+        margin-top: $base-gap;
+        text-shadow: 0px 0px 2px black;
+      }
+      p {
+        color: white;
+        text-shadow: 0px 0px 2px black;
+      }
+    }
+    .menu-list {
+      &:not(:last-child) {
+        border-bottom: 1px solid $light-grey;
+      }
+    }
+  }
+}

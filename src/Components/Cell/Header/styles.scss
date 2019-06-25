@@ -1,0 +1,17 @@
+@import "../../../Themes/colors";
+@import "../../../Themes/sizes";
+
+.header {
+  .icon-title-wrapper {
+    display: flex;
+    align-items: center;
+    .icon-margin-right {
+      margin-right: $base-gap;
+    }
+  }
+  .center-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

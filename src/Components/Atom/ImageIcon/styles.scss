@@ -1,0 +1,8 @@
+@import "../../../Themes/colors";
+@import "../../../Themes/sizes";
+
+.image-icon {
+  width: $normal-icon;
+  height: $normal-icon;
+  object-fit: contain;
+}
